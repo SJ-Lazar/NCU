@@ -10,7 +10,6 @@
     <Folder Include="BackgroundTasks\" />
     <Folder Include="Logging\" />
     <Folder Include="Security\" />
-    <Folder Include="Utilities\" />
   </ItemGroup>
 
 </Project>

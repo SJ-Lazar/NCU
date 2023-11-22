@@ -3,29 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{DE942ED1-3DE3-49D8-9065-2E277ACC1DD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{DE942ED1-3DE3-49D8-9065-2E277ACC1DD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{8BF8B418-267D-412D-BD91-FDE6931B8E63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{8BF8B418-267D-412D-BD91-FDE6931B8E63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{78CAB03B-9C16-4170-A3AE-CC0D3ECA8AFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{7E7C1B92-BD1C-4BCF-B98E-2740D4911487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{7E7C1B92-BD1C-4BCF-B98E-2740D4911487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{221637D9-F3F7-41C7-B840-1CF9D92F3374}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{221637D9-F3F7-41C7-B840-1CF9D92F3374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{6CCD2F4F-7EC5-4091-84AE-A920519BA9C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{6CCD2F4F-7EC5-4091-84AE-A920519BA9C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{4DEA227F-11FB-4387-9799-BA50A51EFAC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{4DEA227F-11FB-4387-9799-BA50A51EFAC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{3D7ADBDF-CCE5-4F30-824A-9229AC1DF81C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{3D7ADBDF-CCE5-4F30-824A-9229AC1DF81C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constants", "Constants\Constants.csproj", "{DF99C61C-0ECE-44AE-BAE9-22895773BB15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants.csproj", "{DF99C61C-0ECE-44AE-BAE9-22895773BB15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{AA5B752F-FD79-4795-A75D-1BC27E872972}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{AA5B752F-FD79-4795-A75D-1BC27E872972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp", "WpfApp\WpfApp.csproj", "{EA353CA8-35CB-4BDE-9095-043AD592889F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{EA353CA8-35CB-4BDE-9095-043AD592889F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp", "MauiApp\MauiApp.csproj", "{9E25CED0-73C1-4853-8893-97544DF8CE0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiApp", "MauiApp\MauiApp.csproj", "{9E25CED0-73C1-4853-8893-97544DF8CE0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{8BF8B418-267D-412D-BD91-FDE6931B8E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BF8B418-267D-412D-BD91-FDE6931B8E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BF8B418-267D-412D-BD91-FDE6931B8E63}.Release|Any CPU.Build.0 = Release|Any CPU
-		{78CAB03B-9C16-4170-A3AE-CC0D3ECA8AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78CAB03B-9C16-4170-A3AE-CC0D3ECA8AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78CAB03B-9C16-4170-A3AE-CC0D3ECA8AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78CAB03B-9C16-4170-A3AE-CC0D3ECA8AFF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E7C1B92-BD1C-4BCF-B98E-2740D4911487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7E7C1B92-BD1C-4BCF-B98E-2740D4911487}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E7C1B92-BD1C-4BCF-B98E-2740D4911487}.Release|Any CPU.ActiveCfg = Release|Any CPU
