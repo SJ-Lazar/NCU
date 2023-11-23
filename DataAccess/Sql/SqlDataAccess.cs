@@ -3,14 +3,14 @@ using Microsoft.Data.SqlClient;
 
 namespace DataAccess.Sql;
 
-public class SqlDataAccess : ISqlDataAccess1
+public class SqlDataAccess 
 {
-    public IEnumerable<T> ExecuteQuery<T>(string? query,
-                                                            object? parameters = null,
-                                                            string? connectionString = null,
-                                                            int? commandTimeout = 60)
+    public IEnumerable<T> ExecuteQuery<T>(string connectionString,
+                                          string query,
+                                          object? parameters = null,
+                                          int? commandTimeout = 60)
     {
-        ArgumentNullException.ThrowIfNull(query);
+        HandleNull(connectionString, query);
         using var connection = new SqlConnection(connectionString);
         try
         {
@@ -24,12 +24,12 @@ public class SqlDataAccess : ISqlDataAccess1
         }
     }
 
-    public int ExecuteNonQuery(string? query,
-                                                object? parameters = null,
-                                                string? connectionString = null,
-                                                int? commandTimeout = 60)
+    public int ExecuteNonQuery(string connectionString,
+                               string query,
+                               object? parameters = null,
+                               int? commandTimeout = 60)
     {
-        ArgumentNullException.ThrowIfNull(query);
+        HandleNull(connectionString, query);
         using var connection = new SqlConnection(connectionString);
         try
         {
@@ -44,12 +44,12 @@ public class SqlDataAccess : ISqlDataAccess1
     }
 
 
-    public T? ExecuteScalarAsync<T>(string? query,
-                                            object? parameters = null,
-                                            string? connectionString = null,
-                                            int? commandTimeout = 60)
+    public T? ExecuteScalarAsync<T>(string connectionString,
+                                    string query,
+                                    object? parameters = null,
+                                    int? commandTimeout = 60)
     {
-        ArgumentNullException.ThrowIfNull(query);
+        HandleNull(connectionString, query);
         using var connection = new SqlConnection(connectionString);
         try
         {
@@ -62,7 +62,12 @@ public class SqlDataAccess : ISqlDataAccess1
             Console.WriteLine($"An error occurred: {ex.Message}");
             throw;
         }
-    }
-}
+    }
+
+    private void HandleNull(string connectionString, string query)
+    {
+        ArgumentNullException.ThrowIfNull(connectionString);
+        ArgumentNullException.ThrowIfNull(query);
+    }}
 
 
