@@ -12,4 +12,8 @@
     <Folder Include="Security\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="QuestPDF" Version="2023.10.2" />
+  </ItemGroup>
+
 </Project>
