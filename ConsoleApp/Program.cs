@@ -1,19 +1,16 @@
-﻿
+﻿Console.WriteLine("Application Started ...");
 
-using Infrastructure.Generators;
-using Infrastructure.Notifications;
-
-PdfGenerator pdfGenerator = new PdfGenerator();
-pdfGenerator.GeneratePdf();
-
-EmailService emailService = new EmailService();
-var response = emailService.SendEmail("lazarsalman@gmail.com", "subject", "body", true, "");
-
-if (response.Contains("success"))
+ static void Method1()
 {
-    Console.WriteLine("Email Sent Sucessfully");
+    Console.WriteLine("Method 1 Started");
+    Thread.Sleep(2000);
+    Console.WriteLine("Method 1 Ended");
 }
-else
-{
-    Console.WriteLine(response);
-}
+
+
+
+
+
+Console.WriteLine("Application Ended ...");
+
+Console.ReadLine();

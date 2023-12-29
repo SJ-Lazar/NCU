@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedRazor", "SharedRazor\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCUMaui", "NCUMaui\NCUMaui.csproj", "{DD9E8920-053F-4EBF-A00C-57ECC5BF1B9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCUWebApp", "NCUWebApp\NCUWebApp\NCUWebApp.csproj", "{DF810844-D866-4F18-A0BD-CF4E4DBAFCCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCUWebApp", "NCUWebApp\NCUWebApp\NCUWebApp.csproj", "{DF810844-D866-4F18-A0BD-CF4E4DBAFCCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCUWebApp.Client", "NCUWebApp\NCUWebApp.Client\NCUWebApp.Client.csproj", "{708E5485-CC29-43FE-8F8F-E24CC355F64E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCUWebApp.Client", "NCUWebApp\NCUWebApp.Client\NCUWebApp.Client.csproj", "{708E5485-CC29-43FE-8F8F-E24CC355F64E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patterns.csproj", "{077C7192-7C20-4C49-B276-0B3DA6B0B562}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,10 @@ Global
 		{708E5485-CC29-43FE-8F8F-E24CC355F64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{708E5485-CC29-43FE-8F8F-E24CC355F64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{708E5485-CC29-43FE-8F8F-E24CC355F64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077C7192-7C20-4C49-B276-0B3DA6B0B562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077C7192-7C20-4C49-B276-0B3DA6B0B562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077C7192-7C20-4C49-B276-0B3DA6B0B562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077C7192-7C20-4C49-B276-0B3DA6B0B562}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

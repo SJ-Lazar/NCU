@@ -1,0 +1,14 @@
+﻿:root {
+    --primary-color: #2C3E50; /* 60% - Dominant color */
+    --secondary-color: #E74C3C; /* 30% - Secondary color */
+    --accent-color: #3498DB; /* 10% - Accent color */
+    /* Other variables or styles using these colors */
+    --text-color: #FFFFFF; /* For text on dark background */
+    --background-color: #1F2C36; /* Background color */
+    /* Additional colors or variables can be defined here */
+}
+
+
+.test {
+    background-color : var(--primary-color);
+}
